@@ -4,8 +4,30 @@
     justify-content: space-between;
     gap: 20px;
     padding: 80px;
-    max-width: 1000px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center-align the container if needed */
+    max-width: 1000px; 
+    margin: 0 auto; 
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 80px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+       
+  }
+  .btn{
+    display: flex;
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #767575;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s; 
+    cursor: pointer;
   }
   
   .Limit > div {
@@ -16,25 +38,26 @@
     background-color: white;
     box-sizing: border-box;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s; /* Add a smooth transition for box-shadow */
+    transition: box-shadow 0.3s; 
     cursor: pointer;
   }
   
-  /* Add box shadow on hover */
-  .Limit > div:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Adjust shadow properties as needed */
+ 
+  .btn:hover, .Limit > div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
-  /* For screens smaller than 1000px, display two boxes per row */
+  
+  
+  
   @media (max-width: 1000px) {
     .Limit > div {
       flex-basis: calc(50% - 20px);
     }
   }
   
-  /* Target the last two divs and make them larger */
+  
   .Limit > div:nth-child(4),
   .Limit > div:nth-child(5) {
-    flex-basis: calc(50% - 20px); /* Adjust the size as needed */
+    flex-basis: calc(50% - 20px); 
   }
-  

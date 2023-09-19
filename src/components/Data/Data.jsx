@@ -24,19 +24,23 @@ export const cardData = [
            button: "Get Started",
            desc: "What you will get :",
            icon:"Upto 75 Users",
+           Storage:"555565",
+           email:"uvwewjo",
       
           },
-          {
-              Name : "Free Starter",
-              button: "Get Started",
-              desc: "What you will get :",
-              icon:"Upto 8 Users",
          
-             },
-             { Name : "Enterprise Plan",
-             button: "Get Started",
-             desc: "What you will get :",
-             icon:"More than 75 Users",
-             
-            }
 ]
+
+export const Starter=[ {
+    Name : "Free Starter",
+    button: "Get Started",
+    desc: "What you will get :",
+    icon:"Upto 8 Users",
+
+   },
+   { Name : "Enterprise Plan",
+   button: "Get Started",
+   desc: "What you will get :",
+   icon:"More than 75 Users",
+   
+  }]

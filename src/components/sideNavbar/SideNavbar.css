@@ -32,13 +32,13 @@
 }
 
 .side-navbar span {
-  font-size: 16px; /* Adjust the text size as needed */
+  font-size: 16px; 
 }
 
 .logout {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: auto; /* Center the logout text/icon vertically */
+  margin: auto; 
   cursor: pointer;
 }

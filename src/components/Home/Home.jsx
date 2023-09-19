@@ -11,8 +11,10 @@ const Home = () => {
         <div className='home-content'>
             
             <div className='side-content'>
+                
             <SideNavbar />
             </div>
+         
             <div className='card-content'>
             <Cards />
             

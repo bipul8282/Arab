@@ -36,10 +36,17 @@
 }
 
 
-.logout {
+logout {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: auto; 
+  cursor: pointer;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px; 
   cursor: pointer;
 }

@@ -4,45 +4,63 @@ import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import QuizIcon from '@mui/icons-material/Quiz';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
-import Avatar from '@mui/material/Avatar'; // Import Avatar component
-import "./SideNavbar.css"; // Import a CSS file for styling
+import Avatar from '@mui/material/Avatar';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
+import './SideNavbar.css'; 
+
 const SideNavbar = () => {
+  const user = {
+    avatarSrc:
+      'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+    name: 'John Doe', // Replace with the user's name
+    email: 'john.doe@example.com', // Replace with the user's email
+  };
+
   const nav = [
     {
-      icon: <Avatar alt="Travis Howard" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />, // Use Avatar component for an image
+      icon: (
+        <Avatar alt={user.name} src={user.avatarSrc} />
+      ),
     },
     {
       icon: <WidgetsIcon />,
-      name: "Dashboard",
+      name: 'Dashboard',
     },
     {
       icon: <AddBusinessIcon />,
-      name: "Pearks",
+      name: 'Pearks',
     },
     {
       icon: <BookmarkAddIcon />,
-      name: "Addons",
+      name: 'Addons',
     },
     {
       icon: <QuizIcon />,
-      name: "FAQ",
+      name: 'FAQ',
     },
     {
       icon: <ContactMailIcon />,
-      name: "Support",
+      name: 'Support',
     },
     {
       icon: <PowerSettingsNewIcon />,
-      name: "Logout",
+      name: 'Logout',
     },
   ];
 
   return (
     <div className="side-navbar">
+      <div className="user-info">
+        { /* Place the user avatar and details here */ }
+        <Avatar alt={user.name} src={user.avatarSrc} />
+        <div className="user-details">
+          <span className="user-name">{user.name}</span> 
+          <span className="user-email">{user.email}</span> 
+        </div>
+      </div>
       <div className="nav-items">
-        {nav?.map((item, index) => (
+        {nav?.slice(1, -1).map((item, index) => (
           <div key={index} className="nav-item">
             {item.icon}
             <span>{item.name}</span>

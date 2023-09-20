@@ -1,7 +1,12 @@
+/* Card.js */
+
 import React from 'react';
-import { Starter } from '../Data/Data';
 import './Cards.css';
 import DoneAllIcon from '@mui/icons-material/DoneAll';
+import PersonOutlineRoundedIcon from '@mui/icons-material/PersonOutlineRounded';
+
+// Import the Starter array from your data source file
+import { Starter } from '../Data/Data';
 
 const Card = () => {
   return (
@@ -16,6 +21,10 @@ const Card = () => {
           </div>
           <div>
             <span>{item.desc}</span>
+            <p>
+              <PersonOutlineRoundedIcon />
+              {item.first}
+            </p>
             <p>
               <DoneAllIcon />
               {item.tick}

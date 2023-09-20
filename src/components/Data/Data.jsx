@@ -39,7 +39,7 @@ export const Starter = [{
     Name: "Free Starter",
     button: "Get Started",
     desc: "What you will get :",
-    icon: "Upto 8 Users",
+    first: "Upto 8 Users",
     Storage: "Upto 3gb Storage",
     email: "Email Support",
     tick: "Basics of Documents, Task Flow Voting, Accounting,Banking,Notes,Invester,Director and Team Management included"
@@ -47,10 +47,9 @@ export const Starter = [{
 },
 {
     Name: "Enterprise Plan",
-    // subtitle:"Effortlessly customize and fine-tune servicesas your needs shift,ensuring and perfect toolsfor success ",
     button: "Get Started",
     desc: "What you will get :",
-    icon: "More than 75 Users",
+    first:"More than 75 Users",
     tick: "Customization of all other features",
 
 }]

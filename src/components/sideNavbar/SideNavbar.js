@@ -13,8 +13,8 @@ const SideNavbar = () => {
   const user = {
     avatarSrc:
       'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-    name: 'John Doe', // Replace with the user's name
-    email: 'john.doe@example.com', // Replace with the user's email
+    name: 'Bipulkumar ', 
+    email: 'kb84101@gmail.com', 
   };
 
   const nav = [
@@ -52,7 +52,7 @@ const SideNavbar = () => {
   return (
     <div className="side-navbar">
       <div className="user-info">
-        { /* Place the user avatar and details here */ }
+       
         <Avatar alt={user.name} src={user.avatarSrc} />
         <div className="user-details">
           <span className="user-name">{user.name}</span> 

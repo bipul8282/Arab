@@ -1,11 +1,12 @@
-/* Card.js */
+
 
 import React from 'react';
 import './Cards.css';
 import DoneAllIcon from '@mui/icons-material/DoneAll';
 import PersonOutlineRoundedIcon from '@mui/icons-material/PersonOutlineRounded';
 
-// Import the Starter array from your data source file
+
+
 import { Starter } from '../Data/Data';
 
 const Card = () => {

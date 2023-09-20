@@ -1,5 +1,4 @@
 /* SideNavbar.css */
-
 .side-navbar {
   display: flex;
   flex-direction: column;
@@ -8,41 +7,41 @@
   width: 200px;
   background-color: #333;
   color: white;
-  /* padding-top: 20px; */
   margin: 0;
   left: 0;
   top: 0;
   position: fixed;
+  transition: width 0.3s; /* Add a transition for smoother resizing */
 }
 
 .user-info {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center avatar and user details vertically */
+  align-items: center;
   gap: 10px;
-  margin: 20px; /* Increase margin for spacing */
-  row-gap: 30px; /* Remove this line */
+  margin: 20px;
+  text-align: center; /* Center text for user details */
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 18px;
+}
+
+.user-email {
+  font-size: 14px;
 }
 
 .nav-items {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0 20px; 
-  row-gap: 70px; 
+  margin: 0 20px;
+  row-gap: 70px;
 }
-.user-details {
-  text-align: center;
-}
-
-.user-name {
-  font-size: 18px; /* Adjust the font size as needed */
-}
-
-.user-email {
-  font-size: 14px; /* Adjust the font size as needed */
-}
-
 
 .nav-item {
   display: flex;
@@ -55,14 +54,21 @@
   font-size: 24px;
 }
 
-.side-navbar span {
-  font-size: 16px;
-}
-
 .logout {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 30px;
   cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 720px */
+@media (max-width: 720px) {
+  .side-navbar {
+    width: 100%; 
+  }
+
+  .nav-items {
+    row-gap: 20px; 
+  }
 }

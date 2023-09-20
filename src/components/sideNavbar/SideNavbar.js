@@ -11,7 +11,7 @@ import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 const SideNavbar = () => {
   const nav = [
     {
-      icon: <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />, // Use Avatar component for an image
+      icon: <Avatar alt="Travis Howard" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />, // Use Avatar component for an image
     },
     {
       icon: <WidgetsIcon />,
